@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- title -->
+    <title>Gymnasium-PSD-Responsive</title>
+</head>
+
+<body>
+
+    <!------------------------- Preloder Starts-------------------------->
+    <!-- <div class="preloder">
+        <img src="images/preloder.gif" alt="preloder">
+    </div> -->
+    <!-------------------------- Preloder Starts------------------------->
+
+    <!-------------------------- Back to Top Starts---------------------->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!------------------------- Back to Top Ends------------------------->
+
+    <!------------------------- Theme Starts------------------------->
+    <div class="sitting">
+        <i class="fas fa-cog"></i>
+    </div>
+    <div class="theme">
+        <div class="theme-itme">
+            <div class="theme-color">
+                <ul>
+                    <li class="default"></li>
+                    <li class="blue"></li>
+                    <li class="green"></li>
+                    <li class="pink"></li>
+                    <li class="orange"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!------------------------- Theme Ends------------------------->
+
+    <!--================================= Navigation bar Starts=================================-->
+
+    <nav class="navbar nav-fixed navbar-expand-lg navbar-light bg-danger py-0">
+        <div class="container">
+            <a class="navbar-brand py-0 position-absolute" href="#">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#banner">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#plan">PLANS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#footer">CONTACTS</a>
+                    </li>
+                    <li class="nav-item sign-btn">
+                        <a href="#" class="btn btn-sm btn-danger text-uppercase m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">sign up</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!------------------------- Modal ------------------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize" id="exampleModalLabel">Sing up form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4">
+                                <div class="modal-image">
+                                    <img src="images/exercise.gif" alt="exercise">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-sm-12">
+
+                                <div class="mb-3 row modal-text">
+                                    <label class="col-lg-2 col-form-label">Name</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control-plaintext" placeholder="Jhon Smith" id="FName">
+                                        <small id="ErrName" class="cotution"></small>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row modal-text">
+                                    <label class="col-lg-2 col-form-label">Email</label>
+                                    <div class="col-lg-10">
+                                        <input type="email" class="form-control-plaintext" placeholder="example@gmail.com" id="FEmail">
+                                        <small id="ErrEmail" class="cotution"></small>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row modal-text">
+                                    <label class="col-lg-2 col-form-label">Weight</label>
+                                    <div class="col-lg-10">
+                                        <input type="number" min="0" max="120" placeholder="100kg" class="form-control-plaintext weight" id="Fweight">
+                                        <small id="ErrWeight" class="cotution"></small>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row modal-text">
+                                    <label class="col-lg-2 col-form-label">Height</label>
+                                    <div class="col-lg-10">
+                                        <input type="number" min="0" max="190" placeholder="160cm" class="form-control-plaintext weight" id="Fheight">
+                                        <small id="ErrHeight" class="cotution"></small>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row modal-text">
+                                    <label class="col-lg-2 col-form-label">Phone</label>
+                                    <div class="col-lg-10">
+                                        <input type="tel" placeholder="01999568785" id="telephone">
+                                        <small id="ErrTel" class="cotution"></small>
+                                    </div>
+                                </div>
+
+                                <div class="input-group modal-text mb-3 d-flex">
+                                    <label class="col-lg-2 col-form-label dateofbirth">Date Of Birth</label>
+                                    <div id="DateofBirth"></div>
+                                </div>
+
+                                <div class="mb-3 row modal-text">
+                                    <label class="col-lg-2 col-form-label">Password</label>
+                                    <div class="col-lg-10">
+                                        <input type="password" id="Pass" placeholder="#6/$j_yEh" class="form-control pass">
+                                        <small id="ErrPass" class="cotution"></small>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row modal-text">
+                                    <label class="col-lg-2 col-form-label">Repassword</label>
+                                    <div class="col-lg-10">
+                                        <input type="password" id="Repass" class="repass form-control">
+                                        <small id="ErrRepass" class="cotution"></small>
+                                    </div>
+                                </div>
+                                <div class="mb-3 trems d-flex"> <input type="checkbox">
+                                    <p class="m-0">I agree to the Trems of Use</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="return sumb();" class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------- offcanvas ------------------------->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+        <div class="offcanvas-body">
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <!--================================= Navigation Bar Ends=================================-->
+
+    <!--================================= Banner Section Starts=================================-->
+    <section id="banner">
+        <div class="Banner-Slider">
+
+            <div class="banner-item bg1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <div class="banner-text text-center text-white">
+                                <h3 class="text-uppercase">time to start</h3>
+                                <h1 class="text-uppercase">Gymnasium</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                <a href="#" class=" btn btn-outline-light text-uppercase">join now</a>
+                                <a href="#" class="  btn btn-outline-light text-uppercase">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-item bg2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="banner-text text-start text-white">
+                                <h3 class="text-uppercase">time to start</h3>
+                                <h1 class="text-uppercase">Gymnasium</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                <a href="#" class=" btn btn-outline-light  text-uppercase">join now</a>
+                                <a href="#" class="  btn btn-outline-light text-uppercase">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-item bg3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="banner-text text-end text-white">
+                                <h3 class="text-uppercase">time to start</h3>
+                                <h1 class="text-uppercase">Gymnasium</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                <a href="#" class=" btn btn-outline-light text-uppercase">join now</a>
+                                <a href="#" class="  btn btn-outline-light text-uppercase">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--================================= Banner Section Ends=================================-->
+
+    <!--================================= About Section Starts=================================-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="about-image">
+                        <figure class=" animate__animated animate__backInRight">
+                            <img src="images/About.jpg" alt="about-img" class="w-100">
+                            <div class="about-overlay">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=YdB1HMCldJY">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="about-text text-center">
+                        <header class="heading">
+                            <h3 class="text-uppercase">about us</h3>
+                            <img src="images/border.png" alt="bordeer-img">
+                        </header>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has sur&#45;vived not only five centuries, but also the leap into electronic typesetting.
+                        </p>
+                        <p>Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software my name is of Lorem Ipsum.Lorem Ipsum is simply
+                            dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================= About Section Ends=================================-->
+
+    <!--================================= Gallery Section Starts=================================-->
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 m-auto">
+                    <header class="heading text-center">
+                        <h3 class="text-uppercase">our galllery</h3>
+                        <img src="images/gal-border.png" alt="gal-border">
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-right">
+                        <div class="gallery-item">
+                            <figure class="mb-0">
+                                <img src="images/gl1.jpg" alt="gl1" class="img-fluid w-100">
+                                <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                    <div class="icon">
+                                        <a class="venobox" data-gall="myGallery" href="images/gl1.jpg">
+                                            <i class="fas fa-search-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="gallery-item" data-aos="fade-right">
+                            <figure class="mb-0">
+                                <img src="images/gl4.jpg" alt="gl1" class="img-fluid w-100">
+                                <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                    <div class="icon">
+                                        <a class="venobox" data-gall="myGallery" href="images/gl2.jpg">
+                                            <i class="fas fa-search-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-down">
+                        <div class="gallery-item">
+                            <figure class="mb-0">
+                                <img src="images/gl2.jpg" alt="gl1" class="img-fluid w-100">
+                                <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                    <div class="icon">
+                                        <a class="venobox" data-gall="myGallery" href="images/gl3.jpg">
+                                            <i class="fas fa-search-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="gallery-item" data-aos="fade-left">
+                            <figure class="mb-0">
+                                <img src="images/gl5.jpg" alt="gl1" class="img-fluid w-100">
+                                <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                    <div class="icon">
+                                        <a class="venobox" data-gall="myGallery" href="images/gl4.jpg">
+                                            <i class="fas fa-search-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-none d-lg-block" data-aos="fade-left">
+                        <div class="gallery-item">
+                            <figure class="mb-0">
+                                <img src="images/gl3.jpg" alt="gl1" class="img-fluid w-100">
+                                <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                    <div class="icon">
+                                        <a class="venobox" data-gall="myGallery" href="images/gl5.jpg">
+                                            <i class="fas fa-search-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="gallery-item" data-aos="fade-up" data-aos-duration="1500">
+                            <figure class="mb-0">
+                                <img src="images/gl6.jpg" alt="gl1" class="img-fluid w-100">
+                                <div class="gallery-overlay d-flex justify-content-center align-items-center">
+                                    <div class="icon">
+                                        <a class="venobox" data-gall="myGallery" href="images/gl6.jpg">
+                                            <i class="fas fa-search-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================= Gallery Section Ends=================================-->
+
+    <!--================================= Our Team Section Starts=================================-->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 m-auto">
+                    <header class="heading text-center">
+                        <h3 class="text-uppercase">our team</h3>
+                        <img src="images/border.png" alt="team-border">
+                    </header>
+                </div>
+
+                <div class="TeamSlider">
+                    <div class="team-item">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="item-image">
+                                <img src="images/team-1.jpg" class="card-image-top img-fluid w-100" alt="team-1">
+                                <div class="team-overlay">
+                                    <ul class="ps-0">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">monica brown</h5>
+                                <h6>Cheif Trainer</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-item">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="item-image">
+                                <img src="images/team-2.jpg" class="card-image-top img-fluid w-100" alt="team-1">
+                                <div class="team-overlay">
+                                    <ul class="ps-0">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">jhon smith</h5>
+                                <h6>Cheif Trainer</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-item">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="item-image">
+                                <img src="images/team-3.jpg" class="card-image-top img-fluid w-100" alt="team-1">
+                                <div class="team-overlay">
+                                    <ul class="ps-0">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">augustine hira</h5>
+                                <h6>Female Trainer</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-item">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="item-image">
+                                <img src="images/team-4.jpg" class="card-image-top img-fluid w-100" alt="team-1">
+                                <div class="team-overlay">
+                                    <ul class="ps-0">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Harvey Trevor</h5>
+                                <h6>Male Trainer</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-item">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="item-image">
+                                <img src="images/team-3.jpg" class="card-image-top img-fluid w-100" alt="team-1">
+                                <div class="team-overlay">
+                                    <ul class="ps-0">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">monica brown</h5>
+                                <h6>Female Trainer</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================= Our Team Section Ends =================================-->
+
+    <!--================================= Testimonials Section Starts =================================-->
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 m-auto">
+                    <header class="heading text-center">
+                        <h3 class="text-uppercase">testimonials</h3>
+                        <img src="images/testimonials.png" alt="team-border">
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-item" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="row">
+                                <div class="col-lg-2 ">
+                                    <div class="testimonial-image">
+                                        <img src="images/partner1.jpg" alt="partner1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10">
+                                    <div class="testimonial-person">
+                                        <h5 class="card-title text-uppercase text-white">Harvey Trevor</h5>
+                                        <h6 class="text-capitalize text-white">gymnast</h6>
+                                        <ul class="ps-0 d-flex">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="testimonial-text">
+                                        <p class="card-text text-white">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printertook a galley of type and scrambled it to make a type specimen book. It has
+                                            survived not only five centuries are not possible.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="testimonial-image">
+                                        <img src="images/partner2.jpg" alt="partner1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10">
+                                    <div class="testimonial-person">
+                                        <h5 class="card-title text-uppercase text-white">janny alpa</h5>
+                                        <h6 class="text-capitalize text-white">gymnast</h6>
+                                        <ul class="ps-0 d-flex">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star-half"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="testimonial-text">
+                                        <p class="card-text text-white">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printertook a galley of type and scrambled it to make a type specimen book. It has
+                                            survived not only five centuries are not possible.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="testimonial-image">
+                                        <img src="images/partner1.jpg" alt="partner1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10">
+                                    <div class="testimonial-person">
+                                        <h5 class="card-title text-uppercase text-white">Harvey Trevor</h5>
+                                        <h6 class="text-capitalize text-white">gymnast</h6>
+                                        <ul class="ps-0 d-flex">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="testimonial-text">
+                                        <p class="card-text text-white">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printertook a galley of type and scrambled it to make a type specimen book. It has
+                                            survived not only five centuries are not possible.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================= Testimonials Section Ends =================================-->
+
+    <!--================================= Membership Section Starts =================================-->
+    <section id="membership">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 m-auto">
+                    <header class="heading text-center">
+                        <h3 class="text-uppercase">membership</h3>
+                        <img src="images/testimonials.png" alt="membership-border">
+                    </header>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="membership-item text-center">
+                        <div class="membership-header">
+                            <h4 class="text-uppercase mb-0">regular membership</h4>
+                        </div>
+                        <div class="membership-plan mbg-1">
+                            <p class="text-white mb-0"><span>$&nbsp;10</span>/month</p>
+                        </div>
+                        <div class="membership-features">
+                            <ul class="ps-0 text-capitalize mb-0">
+                                <li>free tutorials</li>
+                                <li>aerobik programmes</li>
+                                <li>trainer support</li>
+                                <li>x</li>
+                                <li>x</li>
+                            </ul>
+                        </div>
+                        <div class="membership-footer">
+                            <a href="3" class="text-uppercase">join now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="membership-item text-center">
+                        <div class="membership-header">
+                            <h4 class="text-uppercase mb-0">professional membership</h4>
+                        </div>
+                        <div class="membership-plan mbg-2">
+                            <p class="text-white mb-0"><span>$&nbsp;15</span>/month</p>
+                        </div>
+                        <div class="membership-features">
+                            <ul class="ps-0 text-capitalize mb-0">
+                                <li>free tutorials</li>
+                                <li>aerobik programmes</li>
+                                <li>trainer support</li>
+                                <li>fitness orientation</li>
+                                <li>x</li>
+                            </ul>
+                        </div>
+                        <div class="membership-footer">
+                            <a href="3" class="text-uppercase">join now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="membership-item text-center">
+                        <div class="membership-header">
+                            <h4 class="text-uppercase mb-0">standard membership</h4>
+                        </div>
+                        <div class="membership-plan mbg-3">
+                            <p class="text-white mb-0"><span>$&nbsp;20</span>/month</p>
+                        </div>
+                        <div class="membership-features">
+                            <ul class="ps-0 text-capitalize mb-0">
+                                <li>free tutorials</li>
+                                <li>aerobik programmes</li>
+                                <li>trainer support</li>
+                                <li>fitness orientation</li>
+                                <li>morning & evening batches</li>
+                            </ul>
+                        </div>
+                        <div class="membership-footer">
+                            <a href="3" class="text-uppercase">join now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--================================= Membership  Section Ends =================================-->
+
+    <!--================================= Counter Starts =================================-->
+    <section id="funfact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6 text-center">
+                    <div class="counter-item  text-white">
+                        <h3 class="counter mb-0">261</h3>
+                        <p class="mb-0 text-capitalize">cup of tea</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6 text-center text-lg-end text-white">
+                    <div class="counter-item">
+                        <h3 class="counter mb-0">518</h3>
+                        <p class="mb-0  text-capitalize">award win</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 text-center text-white active">
+                    <div class="counter-item">
+                        <h3 class="counter mb-0">999</h3>
+                        <p class="mb-0 text-capitalize">happy clients</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6 text-center text-white">
+                    <div class="counter-item">
+                        <h3 class="counter mb-0">369</h3>
+                        <p class="mb-0 text-capitalize">couse complete</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 text-center d-none d-lg-block text-lg-end text-white">
+                    <div class="counter-item">
+                        <h3 class="counter mb-0">209</h3>
+                        <p class="mb-0 text-capitalize">patner gym</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================= Counter Ends =================================-->
+
+    <!--================================= Routine Starts =================================-->
+    <section id="routine">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 m-auto">
+                    <header class="heading text-center">
+                        <h3 class="text-uppercase">our classes</h3>
+                        <img src="images/testimonials.png" alt="membership-border">
+                    </header>
+                </div>
+                <div class="row">
+                    <div class="routine-nav">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday" type="button" role="tab" aria-controls="monday" aria-selected="true">monday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday" type="button" role="tab" aria-controls="tuesday" aria-selected="false">tuesday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday" type="button" role="tab" aria-controls="wednesday" aria-selected="false">wednesday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="thusday-tab" data-bs-toggle="tab" data-bs-target="#thusday" type="button" role="tab" aria-controls="thusday" aria-selected="false">thusday</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday" type="button" role="tab" aria-controls="friday" aria-selected="false">friday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday" type="button" role="tab" aria-controls="saturday" aria-selected="false">saturday</button>
+                            </li>
+
+
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+                                <ul class="ps-0">
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">yoga</p>
+                                        <i class="flaticon-buddhist-yoga-pose"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">skipping</p>
+                                        <i class="flaticon-man-jumping-rope"></i>
+                                        <p class="mb-0">11:00am - 01:00pm</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">cycling</p>
+                                        <i class="flaticon-exercise-1"></i>
+                                        <p class="mb-0">01:00pm - 03:00pm</p>
+                                    </li>
+                                    <li class="text-center  active">
+                                        <p class="mb-0 text-capitalize">boxing</p>
+                                        <i class="flaticon-man-boxing"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">back relief</p>
+                                        <i class="flaticon-man-doing-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">chin up</p>
+                                        <i class="flaticon-pull-up"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center  active">
+                                        <p class="mb-0 text-capitalize">weight lifting</p>
+                                        <i class="flaticon-weightlifting"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">weight losing</p>
+                                        <i class="flaticon-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">push up</p>
+                                        <i class="flaticon-pushups-man"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">dumbell</p>
+                                        <i class="flaticon-exercise"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                                <ul class="ps-0">
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">yoga</p>
+                                        <i class="flaticon-buddhist-yoga-pose"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">skipping</p>
+                                        <i class="flaticon-man-jumping-rope"></i>
+                                        <p class="mb-0">11:00am - 01:00pm</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">cycling</p>
+                                        <i class="flaticon-exercise-1"></i>
+                                        <p class="mb-0">01:00pm - 03:00pm</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">boxing</p>
+                                        <i class="flaticon-man-boxing"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">back relief</p>
+                                        <i class="flaticon-man-doing-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">chin up</p>
+                                        <i class="flaticon-pull-up"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">weight lifting</p>
+                                        <i class="flaticon-weightlifting"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">weight losing</p>
+                                        <i class="flaticon-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">push up</p>
+                                        <i class="flaticon-pushups-man"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">dumbell</p>
+                                        <i class="flaticon-exercise"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+                                <ul class="ps-0">
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">yoga</p>
+                                        <i class="flaticon-buddhist-yoga-pose"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">skipping</p>
+                                        <i class="flaticon-man-jumping-rope"></i>
+                                        <p class="mb-0">11:00am - 01:00pm</p>
+                                    </li>
+                                    <li class="text-center ">
+                                        <p class="mb-0 text-capitalize">cycling</p>
+                                        <i class="flaticon-exercise-1"></i>
+                                        <p class="mb-0">01:00pm - 03:00pm</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">boxing</p>
+                                        <i class="flaticon-man-boxing"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">back relief</p>
+                                        <i class="flaticon-man-doing-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">chin up</p>
+                                        <i class="flaticon-pull-up"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">weight lifting</p>
+                                        <i class="flaticon-weightlifting"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">weight losing</p>
+                                        <i class="flaticon-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">push up</p>
+                                        <i class="flaticon-pushups-man"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">dumbell</p>
+                                        <i class="flaticon-exercise"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="thusday" role="tabpanel" aria-labelledby="thusday-tab">
+                                <ul class="ps-0">
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">yoga</p>
+                                        <i class="flaticon-buddhist-yoga-pose"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">skipping</p>
+                                        <i class="flaticon-man-jumping-rope"></i>
+                                        <p class="mb-0">11:00am - 01:00pm</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">cycling</p>
+                                        <i class="flaticon-exercise-1"></i>
+                                        <p class="mb-0">01:00pm - 03:00pm</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">boxing</p>
+                                        <i class="flaticon-man-boxing"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">back relief</p>
+                                        <i class="flaticon-man-doing-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">chin up</p>
+                                        <i class="flaticon-pull-up"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">weight lifting</p>
+                                        <i class="flaticon-weightlifting"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">weight losing</p>
+                                        <i class="flaticon-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">push up</p>
+                                        <i class="flaticon-pushups-man"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">dumbell</p>
+                                        <i class="flaticon-exercise"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+                                <ul class="ps-0">
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">yoga</p>
+                                        <i class="flaticon-buddhist-yoga-pose"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">skipping</p>
+                                        <i class="flaticon-man-jumping-rope"></i>
+                                        <p class="mb-0">11:00am - 01:00pm</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">cycling</p>
+                                        <i class="flaticon-exercise-1"></i>
+                                        <p class="mb-0">01:00pm - 03:00pm</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">boxing</p>
+                                        <i class="flaticon-man-boxing"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center  active">
+                                        <p class="mb-0 text-capitalize">back relief</p>
+                                        <i class="flaticon-man-doing-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">chin up</p>
+                                        <i class="flaticon-pull-up"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">weight lifting</p>
+                                        <i class="flaticon-weightlifting"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center  active">
+                                        <p class="mb-0 text-capitalize">weight losing</p>
+                                        <i class="flaticon-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">push up</p>
+                                        <i class="flaticon-pushups-man"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">dumbell</p>
+                                        <i class="flaticon-exercise"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="saturday" role="tabpanel" aria-labelledby="saturday-tab">
+                                <ul class="ps-0">
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">yoga</p>
+                                        <i class="flaticon-buddhist-yoga-pose"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">skipping</p>
+                                        <i class="flaticon-man-jumping-rope"></i>
+                                        <p class="mb-0">11:00am - 01:00pm</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">cycling</p>
+                                        <i class="flaticon-exercise-1"></i>
+                                        <p class="mb-0">01:00pm - 03:00pm</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">boxing</p>
+                                        <i class="flaticon-man-boxing"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">back relief</p>
+                                        <i class="flaticon-man-doing-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center  active">
+                                        <p class="mb-0 text-capitalize">chin up</p>
+                                        <i class="flaticon-pull-up"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">weight lifting</p>
+                                        <i class="flaticon-weightlifting"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center active">
+                                        <p class="mb-0 text-capitalize">weight losing</p>
+                                        <i class="flaticon-yoga"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">push up</p>
+                                        <i class="flaticon-pushups-man"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                    <li class="text-center">
+                                        <p class="mb-0 text-capitalize">dumbell</p>
+                                        <i class="flaticon-exercise"></i>
+                                        <p class="mb-0">09:00am - 11:00am</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================= Routine  Ends =================================-->
+
+    <!--================================= Brand Starts =================================-->
+    <section id="brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand-slider">
+                        <div class="brand-item">
+                            <img src="images/brand-1.jpg" alt="brand1">
+                        </div>
+                        <div class="brand-item">
+                            <img src="images/brand-2.jpg" alt="brand2">
+                        </div>
+                        <div class="brand-item">
+                            <img src="images/brand-3.jpg" alt="brand3">
+                        </div>
+                        <div class="brand-item">
+                            <img src="images/brand-4.jpg" alt="brand4">
+                        </div>
+                        <div class="brand-item">
+                            <img src="images/brand-5.jpg" alt="brand5">
+                        </div>
+                        <div class="brand-item">
+                            <img src="images/brand-2.jpg" alt="brand2">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================= Brand Ends =================================-->
+
+    <!--================================= Footer Section Starts =================================-->
+    <footer>
+        <div class="footer-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-2 m-lg-auto footer-logo">
+                        <img src="images/footer-logo.png" alt="footer-logo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 t order-md-1 order-lg-1">
+                        <div class="footer-item">
+                            <h4 class="text-white text-uppercase mb-0">opening hours</h4>
+                            <ul class="ps-0 opening-hours text-white">
+                                <li><span class="day text-capitalize">monday</span> <span class="time">05:00AM - 11:00PM</span></li>
+                                <li><span class="day text-capitalize">tuesday</span> <span class="time">05:00AM - 11:00PM</span></li>
+                                <li><span class="day text-capitalize">wednesday</span> <span class="time">05:00AM - 11:00PM</span></li>
+                                <li><span class="day text-capitalize">thusday</span> <span class="time">05:00AM - 11:00PM</span></li>
+                                <li><span class="day text-capitalize">friday</span> <span class="time">05:00AM - 11:00PM</span></li>
+                                <li><span class="day text-capitalize">saturday</span> <span class="time">07:00AM - 09:00PM</span></li>
+                                <li><span class="day text-capitalize">sunday</span> <span class="time">Closed</span></li>
+                                <li><span class="day text-capitalize">holiday</span> <span class="time">Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 order-md-3 order-lg-2">
+                        <div class="footer-item">
+                            <h4 class="text-white text-uppercase mb-0">twitter feed</h4>
+                            <ul class="ps-0 twitter-feed text-white">
+                                <li>
+                                    <a href="#">
+                                        <div class="icon"><i class="fab fa-twitter"></i></div>
+                                        <p class="mb-0">We want to introduce you to a new ess theme GYMNASIUM persue new press theme. This the new idea for theme, hope you will like.</p>
+                                        <span class="date">24 July 2017 </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon"><i class="fab fa-twitter"></i></div>
+                                        <p class="mb-0">We want to introduce you to a new ess theme GYMNASIUM persue new press theme. This the new idea for theme.</p>
+                                        <span class="date">20 July 2017 </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 order-md-2 .d-md-none .d-lg-block order-lg-3">
+                        <div class="footer-item flicker">
+                            <h4 class="text-white text-uppercase mb-0">flicker photo</h4>
+                            <ul class="ps-0 flicker-photo text-white ">
+                                <li>
+                                    <a href="#"><img src="images/footer-gl1.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl2.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl3.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl4.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl5.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl6.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl7.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl8.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl9.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl10.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl11.jpg" alt="footer-gl"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/footer-gl12.jpg" alt="footer-gl"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 order-md-4 order-lg-4">
+                        <div class="footer-item">
+                            <h4 class="text-white text-uppercase mb-0">contact</h4>
+                            <ul class="ps-0 footer-contact text-white">
+                                <li>
+                                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>1234 Park Street Avenue, NY City America.
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fas fa-phone"></i></div><a href="tel:++8801738696914">&plus;88&nbsp;017&nbsp;386&nbsp;96914</a>&comma;<a href="tel:++8801741969683">&plus;88&nbsp;017&nbsp;419&nbsp;69683</a>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                                    <a href="mailto:info@admin.com">info@admin.com</a>&comma;<a href="mailto:admin@info.com">admin@info.com</a>
+                                </li>
+                            </ul>
+                            <h4 class="text-white text-uppercase mb-0">get social</h4>
+                            <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer-social"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 m-auto text-center">
+                        <div class="footer-copyright">
+                            <p class="text-white">Copyright &copy; All rights reserved by <a href="index.html">GYMNASIUM.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================================= Footer Section Ends =================================-->
+
+
+
+
+
+
+
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- <script src="js//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- library js -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery-birthday-picker.min.js"></script>
+    <script src="js/intlTelInput-jquery.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="js/aos.js"></script>
+
+
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

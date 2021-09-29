@@ -1,0 +1,521 @@
+ /*=============================
+   ====Extra Small Device====
+===============================*/
+ 
+ @media (max-width: 575px) {
+     /* Navigation Bar Css Start  */
+     .navbar {
+         top: 10px;
+     }
+     .navbar .navbar-brand {
+         transform: skewX(0);
+         padding: 0 !important;
+         position: static !important;
+     }
+     .navbar .navbar-brand img {
+         transform: skewX(0);
+     }
+     .navbar .navbar-toggler {
+         background-color: #e23e38;
+         transition: all linear 0.2s;
+     }
+     .navbar .navbar-toggler:hover {
+         background-color: #ffff;
+     }
+     .navbar .navbar-toggler span {
+         color: #ffff;
+         transition: all linear 0.2s;
+     }
+     .navbar .navbar-toggler:hover span {
+         color: #e23e38;
+     }
+     .navbar .navbar-nav {
+         background: rgb(255, 255, 255, 0.7);
+         text-align: center;
+     }
+     .navbar .navbar-nav .nav-item .nav-link {
+         color: #353535;
+     }
+     .navbar .sign-btn {
+         padding-left: 19px;
+     }
+     /* Modal */
+     .modal .modal-body {
+         padding-top: 230px;
+     }
+     .modal .modal-body .modal-image {
+         position: absolute;
+         top: -80px;
+         left: -58px;
+         transform: scale(0.7);
+     }
+     .modal .modal-text {
+         font-size: 22px;
+     }
+     .modal button,
+     select {
+         padding: 0;
+         margin: 0;
+     }
+     .modal .modal-body .pass,
+     .modal .modal-body .repass {
+         width: 100%;
+         float: left;
+     }
+     /*Navigation Bar Css Ends */
+     /* Banner  Css Starts */
+     #banner .banner-item {
+         padding-top: 220px;
+         padding-bottom: 100px;
+     }
+     #banner .bg1 h1::before,
+     #banner .bg1 h1::after,
+     #banner .bg1 h3::before,
+     #banner .bg1 h3::after,
+     #banner .bg1 p::before,
+     #banner .bg1 p::after {
+         display: none;
+     }
+     #banner .banner-item p {
+         padding: 0;
+     }
+     /*Banner  Css Ends */
+     /* Gallery Css Starts  */
+     #gallery {
+         padding-bottom: 50px;
+     }
+     /* Gallery Css Ends */
+     /*About  Css Starts */
+     #about {
+         padding-top: 50px;
+         padding-bottom: 50px;
+     }
+     #about .about-text p {
+         text-align: justify;
+         padding: 5px 20px;
+     }
+     /*About  Css Ends */
+     /*Team  Css Starts */
+     #team .team-item {
+         transform: translateY(-30px);
+     }
+     #team .team-item .card {
+         border-color: #dddddd !important;
+     }
+     /* #team .team-item .card-text {
+         visibility: visible;
+         opacity: 1;
+     } */
+     /*Team Css Ends */
+     /*Testimonial  Css Start*/
+     #testimonial {
+         padding-bottom: 50px;
+     }
+     #testimonial .testimonial-item .card-text {
+         padding-bottom: 20px;
+         text-align: justify;
+     }
+     /*Testimonial Css Ends */
+     /* Membership Css starts  */
+     #membership {
+         padding-bottom: 50px;
+     }
+     /* Membership Css Ends */
+     /* Counter Css Starts */
+     #funfact .counter-item p {
+         padding-bottom: 30px;
+     }
+     #funfact {
+         padding-bottom: 10px;
+     }
+     /* Counter Css Ends */
+     /* Routine Css starts */
+     #routine {
+         padding-top: 50px;
+     }
+     #routine .nav-tabs .nav-item {
+         width: 100%;
+         margin-bottom: 5px;
+     }
+     #routine .tab-content ul li {
+         width: 100%;
+     }
+     #routine .row>* {
+         padding-right: calc(var(--bs-gutter-x) * .01);
+     }
+     /* Routine Css Ends */
+     /* Brand Css starts */
+     #brand {
+         padding-top: 50px;
+         padding-bottom: 50px;
+     }
+     #brand .brand-item img {
+         width: 80%;
+         margin-left: 28px;
+     }
+     /*Brand Css Ends */
+     /* Footer Css Starts*/
+     footer .footer-copyright p,
+     footer .footer-copyright a {
+         font-size: 11px;
+     }
+     /*Footer Css Ends */
+     /*Preloder Css Starts */
+     .preloder img {
+         transform: scale(0.6);
+     }
+     /*Preloder Css Ends */
+ }
+ /*=============================
+   ====Small Device====
+===============================*/
+ 
+ @media (min-width: 576px) and (max-width: 767px) {
+     /* Navigation Bar Css Start  */
+     .navbar .navbar-brand {
+         transform: skewX(0);
+         padding: 0 !important;
+         position: static !important;
+     }
+     .navbar .navbar-brand img {
+         transform: skewX(0);
+     }
+     .navbar .navbar-toggler {
+         background-color: #e23e38;
+         transition: all linear 0.2s;
+     }
+     .navbar .navbar-toggler:hover {
+         background-color: #ffff;
+     }
+     .navbar .navbar-toggler span {
+         color: #ffff;
+         transition: all linear 0.2s;
+     }
+     .navbar .navbar-toggler:hover span {
+         color: #e23e38;
+     }
+     .navbar .navbar-nav {
+         background: rgb(255, 255, 255, 0.7);
+         text-align: center;
+     }
+     .navbar .navbar-nav .nav-item .nav-link {
+         color: #353535;
+     }
+     /* Modal */
+     .modal .modal-body {
+         padding-top: 255px;
+     }
+     .modal .modal-body .modal-image {
+         position: absolute;
+         top: -70px;
+         left: 20px;
+         transform: scale(0.8);
+     }
+     .navbar .sign-btn {
+         padding-left: 25px;
+     }
+     .modal .modal-text {
+         font-size: 22px;
+     }
+     .modal button,
+     select {
+         padding: 0;
+         margin: 0;
+         margin-left: 8px;
+     }
+     .modal .modal-body .pass,
+     .modal .modal-body .repass {
+         width: 100%;
+         float: left;
+     }
+     /*Navigation Bar Css Ends */
+     /* Banner  Css Starts */
+     #banner .banner-item {
+         padding-top: 220px;
+         padding-bottom: 100px;
+     }
+     #banner .bg1 h1::before,
+     #banner .bg1 h1::after,
+     #banner .bg1 h3::before,
+     #banner .bg1 h3::after,
+     #banner .bg1 p::before,
+     #banner .bg1 p::after {
+         display: none;
+     }
+     #banner .banner-item p {
+         padding: 0;
+     }
+     #banner .banner-item h3 {
+         font-size: 24px;
+     }
+     #banner .banner-item h1 {
+         font-size: 48px;
+     }
+     #banner .slick-dots {
+         bottom: 14px;
+     }
+     /*Banner  Css Ends */
+     /*About  Css Starts */
+     #about {
+         padding-top: 60px;
+         padding-bottom: 60px;
+     }
+     #about .about-text p {
+         text-align: justify;
+         padding: 5px 7px;
+     }
+     /*About  Css Ends */
+     /*Team  Css Starts */
+     #team .team-item {
+         display: flex;
+         justify-content: center;
+         justify-items: flex-start;
+         align-content: space-between;
+     }
+     #team .item-image:hover img {
+         transform: scale(1.06);
+     }
+     #team .item-image img {
+         margin-left: 15px;
+     }
+     /*Team Css Ends */
+     /*Testimonial  Css Start*/
+     #testimonial {
+         padding-bottom: 60px;
+     }
+     #testimonial .testimonial-item .card-text {
+         padding-bottom: 80px;
+         text-align: justify;
+     }
+     /*Testimonial Css Ends */
+     /* Membership Css starts  */
+     #membership {
+         padding-bottom: 60px;
+     }
+     /* Membership Css Ends */
+     /* Counter Css Starts */
+     #funfact .counter-item {
+         padding-bottom: 30px;
+     }
+     #funfact {
+         padding-bottom: 10px;
+     }
+     /* Counter Css Ends */
+     /* Routine Css starts */
+     #routine {
+         padding-top: 60px;
+     }
+     #routine .nav-tabs .nav-item {
+         width: 50%;
+         margin-bottom: 5px;
+     }
+     #routine .tab-content ul li {
+         width: 50%;
+     }
+     #routine .row>* {
+         padding-right: calc(var(--bs-gutter-x) * .01);
+     }
+     /* Routine Css Ends */
+     #brand {
+         padding-top: 60px;
+         padding-bottom: 60px;
+     }
+     #brand .brand-item img {
+         width: 80%;
+         margin-left: -110px;
+     }
+     #brand .left-arrow {
+         left: 40%;
+         top: 130%;
+         z-index: 9999;
+         font-size: 24px;
+     }
+     #brand .right-arrow {
+         right: 40%;
+         top: 130%;
+         z-index: 9999;
+         font-size: 24px;
+     }
+     /*Brand Css Ends */
+     /*Preloder Css Starts */
+     .preloder img {
+         transform: scale(0.7);
+     }
+     /*Preloder Css Ends */
+ }
+ /*=============================
+   ====Medium Device====
+===============================*/
+ 
+ @media (min-width:768px) and (max-width: 991px) {
+     /* Navigation Bar Css Start  */
+     .navbar .navbar-brand {
+         transform: skewX(0);
+         padding: 0 !important;
+         position: static !important;
+     }
+     .navbar .navbar-brand img {
+         transform: skewX(0);
+     }
+     .navbar .navbar-toggler {
+         background-color: #e23e38;
+         transition: all linear 0.2s;
+     }
+     .navbar .navbar-toggler:hover {
+         background-color: #ffff;
+     }
+     .navbar .navbar-toggler span {
+         color: #ffff;
+         transition: all linear 0.2s;
+     }
+     .navbar .navbar-toggler:hover span {
+         color: #e23e38;
+     }
+     .navbar .navbar-nav {
+         background: rgb(255, 255, 255, 0.7);
+         text-align: center;
+     }
+     .navbar .navbar-nav .nav-item .nav-link {
+         color: #353535;
+     }
+     /* Modal */
+     .modal .modal-body {
+         padding-top: 255px;
+     }
+     .modal .modal-body .modal-image {
+         position: absolute;
+         top: -70px;
+         left: 20px;
+         transform: scale(0.8);
+     }
+     .modal .modal-text {
+         font-size: 22px;
+     }
+     .modal button,
+     select {
+         padding: 0;
+         margin: 0;
+         margin-left: 8px;
+     }
+     .modal .modal-body .pass,
+     .modal .modal-body .repass {
+         width: 100%;
+         float: left;
+     }
+     /*Navigation Bar Css Ends */
+     /* Banner  Css Starts */
+     #banner .banner-item {
+         padding-top: 220px;
+         padding-bottom: 100px;
+     }
+     #banner .bg1 h1::before,
+     #banner .bg1 h1::after,
+     #banner .bg1 h3::before,
+     #banner .bg1 h3::after,
+     #banner .bg1 p::before,
+     #banner .bg1 p::after {
+         display: none;
+     }
+     #banner .banner-item h3 {
+         font-size: 24px;
+     }
+     #banner .banner-item h1 {
+         font-size: 48px;
+     }
+     #banner .slick-dots {
+         bottom: 14px;
+     }
+     /*Banner  Css Ends */
+     /*About  Css Starts */
+     #about {
+         padding-top: 60px;
+         padding-bottom: 60px;
+     }
+     #about .about-text p {
+         text-align: justify;
+         padding: 5px 7px;
+     }
+     /*About  Css Ends */
+     /*Team  Css Starts */
+     #team .team-item {
+         display: flex;
+         justify-content: center;
+         justify-items: flex-start;
+         align-content: space-between;
+     }
+     #team .item-image:hover img {
+         transform: scale(1.06);
+     }
+     /*Team Css Ends */
+     /*Testimonial  Css Start*/
+     #testimonial {
+         padding-bottom: 60px;
+     }
+     #testimonial .testimonial-item .card-text {
+         padding-bottom: 80px;
+         text-align: justify;
+     }
+     #testimonial .slick-dots {
+         bottom: 15px;
+     }
+     /*Testimonial Css Ends */
+     /* Membership Css starts  */
+     #membership {
+         padding-bottom: 60px;
+     }
+     /* Membership Css Ends */
+     /* Counter Css Starts */
+     #funfact .counter-item {
+         padding-bottom: 30px;
+     }
+     #funfact {
+         padding-bottom: 10px;
+     }
+     /* Counter Css Ends */
+     /* Routine Css starts */
+     #routine {
+         padding-top: 60px;
+     }
+     #routine .nav-tabs .nav-item {
+         width: 50%;
+         margin-bottom: 5px;
+     }
+     #routine .tab-content ul li {
+         width: 50%;
+     }
+     #routine .row>* {
+         padding-right: calc(var(--bs-gutter-x) * .01);
+     }
+     /* Routine Css Ends */
+     #brand {
+         padding-top: 60px;
+         padding-bottom: 60px;
+     }
+     #brand .brand-item img {
+         width: 80%;
+         margin-left: 22px;
+     }
+     #brand .left-arrow {
+         left: 40%;
+         top: 130%;
+         z-index: 9999;
+         font-size: 24px;
+     }
+     #brand .right-arrow {
+         right: 40%;
+         top: 130%;
+         z-index: 9999;
+         font-size: 24px;
+     }
+     /*Brand Css Ends */
+     /* Footer Css Starts*/
+     footer .footer-overlay .footer-logo {
+         transform: translateX(210%);
+     }
+     /*Footer Css Ends */
+     /*Preloder Css Starts */
+     .preloder img {
+         transform: scale(0.8);
+     }
+     /*Preloder Css Ends */
+ }
